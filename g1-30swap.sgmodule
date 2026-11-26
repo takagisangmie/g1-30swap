@@ -1,10 +1,10 @@
 #!name=g1-30swap
-#!desc=Google One Web 流: 把 one.google.com 下发的 AI Ultra 30TB SKU (g1.ios.30tb.ai.pro.m) 替换为纯存储 30TB SKU (g1.ios.30tb.m)。服务端按客户端提交的 SKU 结算。
+#!desc=Google One Web 流: 把 one.google.com 下发的 AI 档 SKU (30tb/20tb/10tb/5tb/2tb ai.pro) 替换为同容量纯存储 SKU。服务端按客户端提交的 SKU 结算。v2.0.2 切到 raw.githubusercontent.com 避开 jsDelivr 缓存。
 #!author=ctf-ai-reverse
 #!system=ios
 
 [Script]
-g1-30swap = type=http-response,pattern=^https:\/\/one\.google\.com\/,requires-body=1,script-path=https://cdn.jsdelivr.net/gh/takagisangmie/g1-30swap@7d68c278a9e8d71abb75260d8cd8f65a2a803392/g1-30swap.js,max-size=1048576
+g1-30swap = type=http-response,pattern=^https:\/\/one\.google\.com\/,requires-body=1,script-path=https://raw.githubusercontent.com/takagisangmie/g1-30swap/main/g1-30swap.js,max-size=1048576
 
 [MITM]
 hostname = one.google.com

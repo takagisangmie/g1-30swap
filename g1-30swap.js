@@ -6,7 +6,7 @@
 "use strict";
 
 (function () {
-  var VERSION = "g1-30swap-v2.0";
+  var VERSION = "g1-30swap-v2.0.2";
 
   // AI 档 -> 同容量纯存储档
   // m = 月付 / y = 年付 / .v2 = 新版命名
@@ -75,4 +75,3 @@
   console.log("["+VERSION+"] total hits="+hits+" @ "+url.split("?")[0]);
   $done({ body: out });
 })();
-// v2.0.1 cache-bust
