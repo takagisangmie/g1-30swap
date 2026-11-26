@@ -1,0 +1,10 @@
+#!name=g1-30swap-v5-3
+#!desc=[v5-3] 30TB -> g1.ai.ultra.6months_ip_90p.acq  (Ultra 30TB 6个月 1折 (探测))
+#!author=ctf-ai-reverse
+#!system=ios
+
+[Script]
+g1-30swap = type=http-response,pattern=^https:\/\/one\.google\.com\/,requires-body=1,script-path=https://raw.githubusercontent.com/takagisangmie/g1-30swap/main/v5-3.js,max-size=1048576
+
+[MITM]
+hostname = one.google.com
