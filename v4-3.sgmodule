@@ -1,0 +1,10 @@
+#!name=g1-30swap-v4-3
+#!desc=[v4-3] 30TB 目标 SKU = g1.ios.30tb.1month_eft  (1month_eft 免费试用)
+#!author=ctf-ai-reverse
+#!system=ios
+
+[Script]
+g1-30swap = type=http-response,pattern=^https:\/\/one\.google\.com\/,requires-body=1,script-path=https://raw.githubusercontent.com/takagisangmie/g1-30swap/main/v4-3.js,max-size=1048576
+
+[MITM]
+hostname = one.google.com
